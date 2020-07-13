@@ -1,4 +1,42 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "* [1. Prefácio](#1-prefácio)\r * [2. Resumo do projeto](#2-resumo-do-projeto)\r * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)\r * [4. Considerações gerais](#4-considerações-gerais)\r * [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)\r * [6. Entregáveis](#6-entregáveis)\r * [7. Hacker edition](#7-hacker-edition)\r * [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)\r * [9. Checklist](#9-checklist)",
+  "main": "index.js",
+  "bin": {
+    "md-links": "./index.js"
+  },
+  "directories": {
+    "test": "jest --coverage"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js test/",
+    "test": "jest --coverage",
+    "pretest": "npm run eslint",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinerozetti/SAP004-md-links.git"
+  },
+  "keywords": [
+    "links"
+  ],
+  "author": "Aline Rozetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinerozetti/SAP004-md-links/issues"
+  },
+  "homepage": "https://github.com/alinerozetti/SAP004-md-links#readme",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "axios": "^0.19.2",
+    "babel-jest": "^26.1.0",
+    "eslint": "^7.4.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jest": "^26.1.0",
+    "yargs": "^15.4.0"
+  }
 }
