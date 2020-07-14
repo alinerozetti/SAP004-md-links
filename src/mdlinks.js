@@ -2,7 +2,7 @@ const readFile = require("./readFile.js");
 const validate = require('./validate.js');
 const stats = require('./stats.js');
 
-const verifyParams = (path, params) => {
+const mdlinks = (path, params) => {
     if(params.includes('--validate') && !params.includes('--stats')){
         readFile(path).then((result) =>{
             validate(result).then((urls) => {
@@ -35,5 +35,5 @@ const verifyParams = (path, params) => {
     
 }    
 
-  module.exports = verifyParams;
+  module.exports = mdlinks;
   
